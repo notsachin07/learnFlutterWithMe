@@ -7,9 +7,9 @@ void main() {
   print("Welcome to learnFlutterWithMe!");
 
   // 2. Variables and Types
-  print("\n--- SECTION 2: Variables ---");
+  print("\n--- SECTION 2: Variables and Types ---");
   
-  // Explicit declaration
+  // Explicit declaration with proper types
   String college = "VIT-AP"; 
   int year = 1;
   double gpa = 9.0;
@@ -25,9 +25,23 @@ void main() {
   print("Year: $year");
   print("OS Preference: $os");
   
-  // 3. Simple Math
-  print("\n--- SECTION 3: Simple Math ---");
+  // 3. String Interpolation with Expressions
+  print("\n--- SECTION 3: String Interpolation ---");
   int a = 10;
   int b = 5;
   print("Sum of $a and $b is ${a + b}"); // Use ${} for expressions
+  print("GPA: $gpa and Learning: $isLearning");
+  
+  // 4. Variable Swapping Example
+  print("\n--- SECTION 4: Variable Swapping ---");
+  int x = 100;
+  int y = 200;
+  print("Before swap: x=$x, y=$y");
+  
+  // Swap using a temporary variable
+  int temp = x;
+  x = y;
+  y = temp;
+  
+  print("After swap: x=$x, y=$y");
 }
