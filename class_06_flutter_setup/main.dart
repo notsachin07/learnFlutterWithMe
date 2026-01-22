@@ -18,10 +18,10 @@ class GreetingCard extends StatelessWidget {
   final String message;
 
   const GreetingCard({
-    Key? key,
+    super.key,
     required this.name,
     required this.message,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +66,9 @@ class CounterButton extends StatefulWidget {
   final String label;
 
   const CounterButton({
-    Key? key,
+    super.key,
     required this.label,
-  }) : super(key: key);
+  });
 
   @override
   State<CounterButton> createState() => _CounterButtonState();
@@ -143,7 +143,7 @@ class _CounterButtonState extends State<CounterButton> {
 // with hot reload!
 
 class ThemeToggleWidget extends StatefulWidget {
-  const ThemeToggleWidget({Key? key}) : super(key: key);
+  const ThemeToggleWidget({super.key});
 
   @override
   State<ThemeToggleWidget> createState() => _ThemeToggleWidgetState();
@@ -212,12 +212,12 @@ class StudentCard extends StatelessWidget {
   final IconData icon;
 
   const StudentCard({
-    Key? key,
+    super.key,
     required this.name,
     required this.major,
     required this.gpa,
     required this.icon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -274,7 +274,7 @@ class StudentCard extends StatelessWidget {
 // Building lists is one of the most common tasks in mobile apps
 
 class StudentListScreen extends StatelessWidget {
-  const StudentListScreen({Key? key}) : super(key: key);
+  const StudentListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -336,7 +336,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -355,7 +355,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   final String title;
 
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
